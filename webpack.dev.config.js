@@ -13,6 +13,7 @@ module.exports = {
   },
   mode: 'development',
   devServer: {
+    open: true,
     port: 9000,
     static: {
       directory: path.resolve(__dirname, './dist'),
