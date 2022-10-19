@@ -1,14 +1,10 @@
-// import HelloWorldButton from './components/hello-world-button/hello-world-button.js';
-// import Heading from './components/heading/heading.js';
+import { displayScores, results } from './components/scores/scoresLi.js';
+import './components/global/global.scss';
 
-// const heading = new Heading();
-// heading.render();
+window.addEventListener('DOMContentLoaded', displayScores(results));
 
-// const helloWorldButton = new HelloWorldButton();
-// helloWorldButton.render();
-
-if (process.env.NODE_ENV === 'production') {
-  console.log('Production Mode');
-} else if (process.env.NODE_ENV === 'development') {
-  console.log('Development Mode');
-}
+// if (process.env.NODE_ENV === 'production') {
+//   console.log('Production Mode');
+// } else if (process.env.NODE_ENV === 'development') {
+//   console.log('Development Mode');
+// }
