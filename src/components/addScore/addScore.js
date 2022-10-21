@@ -1,4 +1,9 @@
-import { path } from '../variables/variables';
+import { path, name, score } from '../variables/variables';
+
+const clearInput = () => {
+  name.value = '';
+  score.value = '';
+};
 
 export const addScore = async (name, score) => {
   const postScore = await fetch(path, {
@@ -11,4 +16,5 @@ export const addScore = async (name, score) => {
       score: score,
     }),
   });
+  clearInput();
 };
