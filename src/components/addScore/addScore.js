@@ -1,2 +1,1 @@
-
-
+const addScore = async () => {};

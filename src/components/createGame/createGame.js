@@ -16,6 +16,8 @@ const createGame = async () => {
   return retrieveID;
 };
 
+createGame();
+
 const gameID = '6kcCyWJECOYybO2bUZrq';
 
 export default gameID;
