@@ -1,5 +1,8 @@
 import { displayScores, results } from './components/scores/scoresLi.js';
 import './components/global/global.scss';
+import gameID from './components/createGame/createGame.js';
+
+console.log(gameID);
 
 window.addEventListener('DOMContentLoaded', displayScores(results));
 
