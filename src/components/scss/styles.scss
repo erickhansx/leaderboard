@@ -1,0 +1,115 @@
+body {
+  background-image: url('../../img/arcane-jinx-league-of-legends-hd-wallpaper-d930a8dd81cacd4bc6c7184ff081e64d.jpg');
+}
+
+::placeholder {
+  color: rgb(240, 197, 58);
+  font-weight: 400;
+}
+
+.leaderboard__h1 {
+  color: rgb(24, 143, 212, 0.6);
+  font-family: 'Cabin', sans-serif;
+  animation: blink 0.1s linear infinite;
+
+  @keyframes blink {
+    from {
+      color: rgba(24, 68, 212);
+    }
+    to {
+      color: rgba(245, 248, 248);
+    }
+  }
+}
+
+.leaderboard {
+  display: flex;
+  justify-content: space-around;
+
+  &__li {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgb(226, 197, 142, 0.4);
+    color: #85eaf1;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    &:nth-child(even) {
+      color: rgb(255, 236, 202);
+      background-color: rgb(225, 225, 225, 0.4);
+    }
+  }
+
+  &__recent-scores {
+    width: 50%;
+    padding: 5rem;
+
+    h2 {
+      color: rgb(226, 197, 142);
+    }
+
+    &--btn {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+      border-radius: 5px;
+    }
+  }
+
+  &__add-score {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    position: relative;
+
+    h2 {
+      margin-bottom: 2rem;
+      color: rgb(226, 197, 142);
+    }
+
+    input {
+      margin: 1rem 0;
+      padding: 0.3rem;
+      border-radius: 5px;
+    }
+
+    input[type='text'],
+    textarea {
+      background-color: rgb(28, 161, 214, 0.6);
+    }
+
+    button {
+      width: 40%;
+      padding: 0.3rem;
+      align-self: flex-end;
+      border-radius: 5px;
+      background-color: rgb(226, 197, 142, 0.6);
+      cursor: pointer;
+    }
+  }
+}
+
+.refresh-btn {
+  width: 25%;
+  border-radius: 5px;
+  background-color: rgb(226, 197, 142, 0.6);
+  cursor: pointer;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.6rem;
+
+  &:hover {
+    transition: 100ms ease-in-out;
+    font-size: 1.8rem;
+    color: #4a8d91;
+    background-color: rgb(226, 197, 142);
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

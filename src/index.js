@@ -1,4 +1,4 @@
-import './components/scores/scoresLi.scss';
+import './components/scss/styles.scss';
 import './components/global/global.scss';
 import retrieveScores from './components/retrieveScores/retrieveScores.js';
 import {
