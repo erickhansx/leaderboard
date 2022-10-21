@@ -1,6 +1,6 @@
 import { displayScores, results } from './components/scores/scoresLi.js';
 import './components/global/global.scss';
-import retrieveScores from './components/retrieveScores/retrieveScores';
+import { retrieveScores } from './components/retrieveScores/retrieveScores';
 import { submitBtn, name, score } from './components/variables/variables.js';
 import { addScore } from './components/addScore/addScore.js';
 
