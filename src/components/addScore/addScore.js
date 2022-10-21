@@ -1,3 +1,5 @@
+import { alertFail } from '../alertFail/alertFail';
+import { alertSuccess } from '../alertSuccess/alertSuccess';
 import { path, name, score } from '../variables/variables';
 
 const clearInput = () => {
@@ -16,5 +18,6 @@ export const addScore = async (name, score) => {
       score: score,
     }),
   });
+  alertSuccess();
   clearInput();
 };

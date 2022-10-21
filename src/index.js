@@ -8,13 +8,17 @@ import {
   refreshBtn,
 } from './components/variables/variables.js';
 import { addScore } from './components/addScore/addScore.js';
-import { alertSuccess } from './components/alertSuccess/alertSuccess.js';
+import { alertFail } from './components/alertFail/alertFail.js';
 
 document.addEventListener('DOMContentLoaded', retrieveScores());
 
 submitBtn.addEventListener('click', () => {
+  if (name.value === '' || score.value === '') {
+    console.log(name.value);
+    alertFail();
+    return;
+  }
   console.log(name.value, score.value);
-  alertSuccess();
   addScore(name.value, score.value);
 });
 refreshBtn.addEventListener('click', () => {
