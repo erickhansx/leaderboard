@@ -38,7 +38,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayScores\": () => (/* binding */ displayScores),\n/* harmony export */   \"results\": () => (/* binding */ results)\n/* harmony export */ });\n/* harmony import */ var _scoresLi_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scoresLi.scss */ \"./src/components/scores/scoresLi.scss\");\n\nvar results = [{\n  user: 'John',\n  score: 100\n}, {\n  user: 'Mike',\n  score: 100\n}, {\n  user: 'Luigi',\n  score: 100\n}, {\n  user: 'Robert',\n  score: 100\n}, {\n  user: 'Marlon',\n  score: 100\n}, {\n  user: 'Ann Q',\n  score: 100\n}, {\n  user: 'John',\n  score: 100\n}];\n\nvar displayScores = function displayScores(results) {\n  if (results != null) {\n    results.forEach(function (result) {\n      var ul = document.querySelector('.leaderboard__list');\n      var li = document.createElement('li');\n      li.classList.add('leaderboard__li');\n      li.innerHTML = \"\".concat(result.user, \": \").concat(result.score);\n      ul.appendChild(li);\n    });\n  }\n};\n\n\n\n//# sourceURL=webpack://webpack2.0/./src/components/scores/scoresLi.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayScores\": () => (/* binding */ displayScores),\n/* harmony export */   \"results\": () => (/* binding */ results)\n/* harmony export */ });\n/* harmony import */ var _scoresLi_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scoresLi.scss */ \"./src/components/scores/scoresLi.scss\");\n\nvar results = [// {\n  //   user: 'John',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'Mike',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'Luigi',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'Robert',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'Marlon',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'Ann Q',\n  //   score: 100,\n  // },\n  // {\n  //   user: 'John',\n  //   score: 100,\n  // },\n];\n\nvar displayScores = function displayScores(results) {\n  if (results != null) {\n    results.forEach(function (result) {\n      var ul = document.querySelector('.leaderboard__list');\n      var li = document.createElement('li');\n      li.classList.add('leaderboard__li');\n      li.innerHTML = \"\".concat(result.user, \": \").concat(result.score);\n      ul.appendChild(li);\n    });\n  }\n};\n\n\n\n//# sourceURL=webpack://webpack2.0/./src/components/scores/scoresLi.js?");
 
 /***/ }),
 
@@ -496,7 +496,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("6c27ce93b0bfb9431b98")
+/******/ 		__webpack_require__.h = () => ("4a618a66e7070daf50cb")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
