@@ -1,12 +1,13 @@
 .alert-success {
-  background-color: rgb(50, 122, 50, 0.9);
-  position: absolute;
+  background-color: rgb(50, 122, 50, 0.6);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 20px;
+  height: 30px;
   text-align: center;
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
+  font-family: 'PT Sans Narrow', sans-serif;
 }

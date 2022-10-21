@@ -1,4 +1,4 @@
-import './scoresLi.scss';
+import './styles.scss';
 
 // const displayScores = (results) => {
 // if (results != null) {
