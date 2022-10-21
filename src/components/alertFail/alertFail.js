@@ -1,6 +1,6 @@
 import './alertFail.scss';
 
-export const alertFail = () => {
+const alertFail = () => {
   const failDiv = document.createElement('div');
   failDiv.classList.add('fail-div');
   failDiv.innerText = 'Please enter a valid name/score.';
@@ -10,3 +10,5 @@ export const alertFail = () => {
     failDiv.remove();
   }, 3000);
 };
+
+export default alertFail;

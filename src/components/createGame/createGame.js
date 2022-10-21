@@ -9,7 +9,7 @@ const createGame = async () => {
       body: JSON.stringify({
         name: 'EricksGame',
       }),
-    }
+    },
   )
     .then((data) => data.json())
     .then((data) => data.result.split(' ')[3]);

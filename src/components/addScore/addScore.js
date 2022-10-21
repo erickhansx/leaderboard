@@ -1,23 +1,24 @@
-import { alertFail } from '../alertFail/alertFail';
-import { alertSuccess } from '../alertSuccess/alertSuccess';
-import { path, name, score } from '../variables/variables';
+import alertSuccess from '../alertSuccess/alertSuccess.js';
+import { path, name, score } from '../variables/variables.js';
 
 const clearInput = () => {
   name.value = '';
   score.value = '';
 };
 
-export const addScore = async (name, score) => {
-  const postScore = await fetch(path, {
+const addScore = async (name, score) => {
+  await fetch(path, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
     },
     body: JSON.stringify({
       user: name,
-      score: score,
+      score,
     }),
   });
   alertSuccess();
   clearInput();
 };
+
+export default addScore;

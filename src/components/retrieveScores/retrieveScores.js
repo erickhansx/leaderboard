@@ -1,7 +1,8 @@
-import { path } from '../variables/variables';
-import { clearList } from '../clearList/clearList';
+/* eslint-disable */
+import { path } from '../variables/variables.js';
+import clearList from '../clearList/clearList.js';
 
-export const retrieveScores = async () => {
+const retrieveScores = async () => {
   try {
     const retrieve = await fetch(path);
     const data = await retrieve.json();
@@ -15,10 +16,11 @@ export const retrieveScores = async () => {
         li.innerHTML = `${element.user}: ${element.score}`;
         ul.appendChild(li);
       });
+      return data;
     }
-
-    return data;
   } catch (err) {
     console.log('error', err);
   }
 };
+
+export default retrieveScores;

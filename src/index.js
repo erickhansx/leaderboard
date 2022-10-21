@@ -1,14 +1,14 @@
-import { displayScores } from './components/scores/scoresLi.js';
+import './components/scores/scoresLi.scss';
 import './components/global/global.scss';
-import { retrieveScores } from './components/retrieveScores/retrieveScores';
+import retrieveScores from './components/retrieveScores/retrieveScores.js';
 import {
   submitBtn,
   name,
   score,
   refreshBtn,
 } from './components/variables/variables.js';
-import { addScore } from './components/addScore/addScore.js';
-import { alertFail } from './components/alertFail/alertFail.js';
+import addScore from './components/addScore/addScore.js';
+import alertFail from './components/alertFail/alertFail.js';
 
 document.addEventListener('DOMContentLoaded', retrieveScores());
 
