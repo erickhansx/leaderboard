@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# TO-DO List
+# Leaderboard
 
 > In this project the leaderboard app allows you to create games and the user can submit their names and scores into the app to keep track of the LEADERBOARD.
 
